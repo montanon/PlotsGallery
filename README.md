@@ -1,6 +1,6 @@
 # PlotsGallery
 A gallery to show some plots I've made that I like.
-Some of the are made using miPlots (unreleased), others with matplotlib and other libraries.
+Some of them are made using miPlots (unreleased), others with matplotlib and other libraries.
 
 ## 0-Actual Vs Predicted Values
 ![Actual Vs Predicted Values](https://github.com/montanon/PlotsGallery/blob/master/plots/0-actual_vs_predicted_values.png)

@@ -4,7 +4,7 @@ REPO_URL = "https://github.com/montanon/PlotsGallery/blob/master/plots"
 CORE_README = (
     "# PlotsGallery\n"
     + "A gallery to show some plots I've made that I like.\n"
-    + "Some of the are made using miPlots (unreleased), others with matplotlib and other libraries.\n\n"
+    + "Some of them are made using miPlots (unreleased), others with matplotlib and other libraries.\n\n"
 )
 
 
