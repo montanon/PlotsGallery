@@ -12,7 +12,7 @@ def create_readme():
     readme_path = Path(__file__).parent / "README.md"
 
     plots_paths = list((Path(__file__).parent / "plots").glob("*.png"))
-    plots_paths.sort(key=lambda x: int(x.name.split(".")[0]))
+    plots_paths.sort(key=lambda x: int(x.name.split("-")[0]))
     plots = [str(path.name) for path in plots_paths]
 
     headers = [
@@ -25,7 +25,7 @@ def create_readme():
         for header, path in zip(headers, plots_paths):
             f.write(f"{header}\n")
             f.write(
-                f"![{header.replace('## ', '').split('. ')[1]}]({REPO_URL}/plots/{path.name})\n\n"
+                f"![{header.replace('## ', '').split('-')[1]}]({REPO_URL}/plots/{path.name})\n\n"
             )
 
 
