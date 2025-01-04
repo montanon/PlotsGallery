@@ -1,6 +1,6 @@
 from pathlib import Path
 
-REPO_URL = "https://github.com/montanon/PlotsGallery"
+REPO_URL = "https://github.com/montanon/PlotsGallery/blob/master/plots"
 CORE_README = (
     "# PlotsGallery\n"
     + "A gallery to show some plots I've made that I like.\n"
@@ -25,7 +25,7 @@ def create_readme():
         for header, path in zip(headers, plots_paths):
             f.write(f"{header}\n")
             f.write(
-                f"![{header.replace('## ', '').split('-')[1]}]({REPO_URL}/plots/{path.name})\n\n"
+                f"![{header.replace('## ', '').split('-')[1]}]({REPO_URL}/{path.name})\n\n"
             )
 
 
